@@ -6,7 +6,15 @@
     align-items: center;
     padding: 0px 10px;
     // color: white;
-    
+    a{
+      >img{
+        height: 30px;
+        &:hover{
+          filter: saturate(4.5);
+        }
+      } 
+    }
+      
     nav {
       display: flex;
       justify-content: center;

@@ -7,10 +7,10 @@
             <p>{{contact.email}}</p>
         </div>
         <a class="edit-btn" [routerLink]="['/contact/edit',contact._id]">
-            <img src="./assets/img/edit.gif" alt="">
+            <img src="../assets/img/edit.gif" alt="">
         </a>
         <a class="edit-btn" routerLink="/contact">
-            <img src="./assets/img/cancel-icon.png" alt="">
+            <img src="../assets/img/cancel-icon.png" alt="">
         </a>
     </div>
     <app-transfer-fund [moveTo]="contact" (onGoHome)="onGoHome()"></app-transfer-fund>

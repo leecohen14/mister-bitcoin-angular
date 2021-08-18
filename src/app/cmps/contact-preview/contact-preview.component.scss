@@ -10,7 +10,10 @@
         color: #40434a;
         border-radius: 3px;
         .delete-btn{
-            color: #40434a
+            color: #40434a;
+            >img{
+                filter: contrast(0.5);
+            }
         }
     }
     .link{
@@ -37,8 +40,15 @@
         color: whitesmoke;
         cursor: pointer;
         margin-right: 10px;
-        &:hover{
-            color: red;
+        
+        >img{
+            height: 15px;
+            filter: brightness(0) invert(1);
+            position: relative;
+            top: 5px;
+            &:hover{
+                filter: invert(15%) sepia(96%) saturate(7075%) hue-rotate(2deg) brightness(100%) contrast(114%);
+            }
         }
     }
 }
