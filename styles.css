@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url('blue-bg-image.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff7f7;
+}
+button {
+  cursor: pointer;
+}
+.active {
+  color: #ecc843;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+.gray-text {
+  color: #7d6a6a;
+  font-size: 14px;
+}
+.green-text {
+  color: #9ee046;
+}
+.black-screen {
+  position: fixed;
+  height: 100%;
+  background-color: black;
+}
+
+/*# sourceMappingURL=styles.css.map*/
