@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  font-family: roboto-regular;
+}
 body {
   background-image: url('blue-bg-image.jpeg');
   background-repeat: no-repeat;
@@ -30,6 +33,19 @@ a {
   position: fixed;
   height: 100%;
   background-color: black;
+}
+.pink-btn {
+  color: white;
+  align-self: flex-end;
+  width: 80px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #ff7c93;
+  border: none;
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url('Roboto-Regular.ttf');
 }
 
 /*# sourceMappingURL=styles.css.map*/
