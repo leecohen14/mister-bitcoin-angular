@@ -1,0 +1,20 @@
+.transaction-preview{
+    display: flex;
+    justify-content: space-between;
+    // margin-top: 5px;
+    padding: 8px 0px;
+    border-top: 1px solid whitesmoke;
+    .main-details{
+        display: flex;
+        flex-direction: column;
+        .trans-time{
+            font-size: 12px;
+        }
+    }
+    .pos-amount{
+        color: greenyellow
+    }
+    .neg-amount{
+        color: red
+    }
+}

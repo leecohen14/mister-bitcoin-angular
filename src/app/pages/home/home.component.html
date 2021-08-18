@@ -1,0 +1,42 @@
+<section class="home-page">
+    <h1>Hi, {{user.name}}</h1>
+    <main>
+
+        <head class="head-container">
+            <div class="user-balance">
+                <span class="gray-text">Total Balance</span>
+                <span>BTC: <span class="green-text">₿ {{user.coins}}</span></span>
+                <span>US$ {{((bitcoinRate|async)*user.coins)?.toLocaleString()}}</span>
+            </div>
+            <div class="bitcoin-rate">
+                <span class="gray-text">Current BTC USD </span>
+                <span class="amount" *ngIf="(bitcoinRate|async);else btcLoad">$
+                    {{(bitcoinRate|async)?.toLocaleString()}}</span>
+                <ng-template #btcLoad>Loading...</ng-template>
+            </div>
+        </head>
+        <app-move-list [transactions]="user.moves"></app-move-list>
+    </main>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- sample of ngIf -->
+<!-- <div class="transfer-form-container">
+    <button (click)="onShowTransferForm()" *ngIf="!showTransferForm;else transferForm">new transfer</button>
+    <ng-template #transferForm>
+        <app-transfer-fund></app-transfer-fund>
+        <button (click)="onCloseTransferForm()">X</button>
+    </ng-template>
+</div> -->

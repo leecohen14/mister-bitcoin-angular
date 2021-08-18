@@ -1,0 +1,26 @@
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .details-container{
+        display: flex;
+        align-items: flex-end;  
+        margin: 10px; 
+        margin-bottom: 20px;     
+        > img{
+            height: 80px;
+            width: 80px;
+        }
+        .main-details{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+    .edit-btn{
+        padding: 10px;
+        align-self: flex-start;
+    }
+    
+}

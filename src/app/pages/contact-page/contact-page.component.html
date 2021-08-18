@@ -1,0 +1,10 @@
+<section class="contact-page">
+    <router-outlet></router-outlet>
+    <header>
+        <h4>My Contacts</h4>
+        <a class="add-contact-btn" routerLink="/contact/edit" routerLinkActive="active">+</a>
+    </header>
+    <app-contact-list [contacts]="contacts$|async"></app-contact-list>
+    
+    
+</section>

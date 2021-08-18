@@ -1,0 +1,6 @@
+<div class="contact-list">
+    <app-contact-preview *ngFor="let contact of contacts;index as idx"
+     [contact]="contact"></app-contact-preview>
+    <!-- <contact-preview *ngFor="let contact of contacts;index as idx" [contact]="contact"
+      (onSelectContact)="onSelectContact.emit($event)"></contact-preview> -->
+  </div>

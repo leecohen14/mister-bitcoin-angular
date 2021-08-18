@@ -1,0 +1,11 @@
+<!-- <p>contact-preview works!</p> -->
+<!-- <p>{{contact|json}}</p> -->
+<section class="contact-preview">
+        <a class="link" [routerLink]="['/contact',contact._id]">
+
+            <!-- <img src=`https://robohash.org/${contact._id}` alt="" /> -->
+            <img [src]="imgPath" alt="" />
+            <span class="contact-name">{{contact.name}}</span>
+    </a>
+    <button class="delete-btn" (click)="onDeleteContact()">X</button>
+</section>

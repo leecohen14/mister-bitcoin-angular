@@ -1,0 +1,8 @@
+.move-list{
+    .moves-title{
+        margin-bottom: 10px;
+    }
+    &:last-child{
+        border-bottom: 1px solid whitesmoke;
+    }
+}

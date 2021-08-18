@@ -1,0 +1,28 @@
+.home-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    h1{
+        margin-bottom: 10px;
+    }
+    main{
+        .head-container{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .user-balance{
+                display: flex;
+                flex-direction: column;
+            }
+            .bitcoin-rate{
+                display: flex;
+                flex-direction: column;
+                .amount{
+                    font-size: 30px;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.contact-edit-page{
+    .edit-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 350px;
+        .title{
+            margin-bottom: 10px;
+        }
+        > img{
+            height: 120px;
+            width: 120px;
+            margin-bottom: 10px;
+        }
+        input{
+            height: 20px;
+            border-radius: 3px;
+            border: none;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            max-width: 350px;
+        }
+        button{
+            color: white;
+            align-self: flex-end;
+            width: 80px;
+            height: 35px;
+            border-radius: 3px;
+            background-color:#ff7c93;
+            border: none;
+
+        }
+    }
+}

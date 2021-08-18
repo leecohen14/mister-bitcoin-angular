@@ -1,0 +1,7 @@
+<section class="transaction-preview">
+    <div class="main-details">
+        <p>{{transaction.to.name}}</p>
+        <p class="trans-time">transaction completed: {{transaction.time | date}} </p>
+    </div>
+    <p [ngClass]="transaction.amount<0 ? 'pos-amount' : 'neg-amount'">₿ {{transaction.amount*-1}}</p>
+</section>

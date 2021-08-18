@@ -1,0 +1,13 @@
+<section class="contact-details">
+    <div class="details-container">
+        <img src={{imgPath}} alt="" />
+        <div class="main-details">
+            <h2>{{contact.name}}</h2>
+            <p>{{contact.phone}}</p>
+            <p>{{contact.email}}</p>
+        </div>
+        <a class="edit-btn" [routerLink]="['/contact/edit',contact._id]">Edit</a>
+        <a class="edit-btn" routerLink="/contact">X</a>
+    </div>
+    <app-transfer-fund [moveTo]="contact" (onGoHome)="onGoHome()"></app-transfer-fund>
+</section>

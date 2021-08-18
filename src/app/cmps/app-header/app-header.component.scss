@@ -1,0 +1,20 @@
+.app-header {
+    height: 40px;
+    // background-color: #121d33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    // color: white;
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+  
+      .active-nav {
+        color: #121d33;
+        font-weight: bold;
+      }
+    }
+  }

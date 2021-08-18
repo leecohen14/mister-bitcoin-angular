@@ -1,0 +1,21 @@
+.contact-page{
+    display: flex;  
+    flex-direction: column;
+    header {
+        display: flex;
+        gap: 10px;
+        // justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+        margin-bottom: 0;
+    }
+    .add-contact-btn {
+        font-size: 26px;
+        padding-bottom: 2px;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover{
+            color: #ecc843
+        }
+    }
+}
