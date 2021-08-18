@@ -2,7 +2,7 @@
     <form #form="ngForm" (ngSubmit)="onTransferCoins(form)">
         <!-- <h4>Transfer form</h4> -->
         <input name="amount" minlength="1" placeholder="Amount of coins" [(ngModel)]="transaction.amount" autocomplete="off" />
-        <button>Transfer</button>
+        <button class="pink-btn">Transfer</button>
     </form>
     <p *ngIf="transaction.amount">($ <span>{{(transaction.amount*(bitcoinRate|async)).toLocaleString()}}</span>)</p>
     <!-- <p>($ <span>{{bitcoinRate|async}}</span>)</p> -->

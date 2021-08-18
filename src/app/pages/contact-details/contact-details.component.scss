@@ -21,6 +21,11 @@
     .edit-btn{
         padding: 10px;
         align-self: flex-start;
+        >img{
+            height: 15px;
+            // filter: invert(6%) sepia(5%) saturate(9407%) hue-rotate(1514.3deg) brightness(0%) contrast(0%);
+            filter: brightness(0) invert(1);
+        }
     }
     
 }

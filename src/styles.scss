@@ -40,6 +40,16 @@ a{
     background-color: black;
 }
 
+.pink-btn{
+    color: white;
+    align-self: flex-end;
+    width: 80px;
+    height: 35px;
+    border-radius: 3px;
+    background-color:#ff7c93;
+    border: none;
+}
+
 @font-face {
     font-family: roboto-regular;
     src: url("./assets/fonts/Roboto-Regular.ttf");

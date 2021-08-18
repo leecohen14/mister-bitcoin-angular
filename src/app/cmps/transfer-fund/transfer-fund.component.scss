@@ -5,5 +5,11 @@
         display: flex;
         gap: 5px;
         margin-bottom: 5px;
+        input{
+            padding: 5px 10px;
+        }
+        button{
+            height: 30px;
+        }
     }
 }

@@ -1,9 +1,21 @@
 .contact-edit-page{
+    display: flex;
+    justify-content: center;
+    
     .edit-form{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
         max-width: 350px;
+        .form-header{
+            display: flex;
+            justify-content: space-between;
+            .cancel-btn{
+                height: 15px;
+                filter: invert(1)
+            }
+        }
         .title{
             margin-bottom: 10px;
         }
@@ -19,16 +31,6 @@
             padding: 5px 10px;
             margin-bottom: 10px;
             max-width: 350px;
-        }
-        button{
-            color: white;
-            align-self: flex-end;
-            width: 80px;
-            height: 35px;
-            border-radius: 3px;
-            background-color:#ff7c93;
-            border: none;
-
         }
     }
 }

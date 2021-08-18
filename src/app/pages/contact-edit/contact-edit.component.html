@@ -1,15 +1,19 @@
 <section class="contact-edit-page">
-  <a class="edit-btn" routerLink="/contact">X</a>
   <form class="edit-form" (submit)="onSaveContact($event)" *ngIf="contact;else loader">
-    <h3 class="title" *ngIf="contact.name; else newContactName">{{contact.name}}</h3>
+    <div class="form-header">
+      <h3 class="title" *ngIf="contact.name; else newContactName">{{contact.name}}</h3>
+      <a class="edit-btn" routerLink="/contact">
+        <img class="cancel-btn" src="./assets/img/cancel-icon.png" alt="">
+      </a>
+    </div>
     <ng-template #newContactName>
-      <h3 class="title" >New Contact</h3>
+      <h3 class="title">New Contact</h3>
     </ng-template>
     <input type="text" id="name" [(ngModel)]="contact.name" name="name" placeholder="Name">
     <input type="text" id="phone" [(ngModel)]="contact.phone" name="phone" placeholder="Phone">
     <input type="text" id="email" [(ngModel)]="contact.email" name="email" placeholder="Email">
 
-    <button>Save</button>
+    <button class="pink-btn">Save</button>
   </form>
 
   <ng-template #loader>
