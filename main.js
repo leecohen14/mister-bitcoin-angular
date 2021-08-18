@@ -1437,7 +1437,7 @@ class AppHeaderComponent {
     }
 }
 AppHeaderComponent.ɵfac = function AppHeaderComponent_Factory(t) { return new (t || AppHeaderComponent)(); };
-AppHeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppHeaderComponent, selectors: [["app-header"]], decls: 8, vars: 2, consts: [[1, "app-header"], ["routerLink", "/"], ["src", "../assets/img/bitcoin-logo.png", "alt", ""], ["routerLink", "/", "routerLinkActive", "active", 3, "routerLinkActiveOptions"], ["routerLink", "/contact", "routerLinkActive", "active"]], template: function AppHeaderComponent_Template(rf, ctx) { if (rf & 1) {
+AppHeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppHeaderComponent, selectors: [["app-header"]], decls: 8, vars: 2, consts: [[1, "app-header"], ["routerLink", "/"], ["src", "./assets/img/bitcoin-logo.png", "alt", ""], ["routerLink", "/", "routerLinkActive", "active", 3, "routerLinkActiveOptions"], ["routerLink", "/contact", "routerLinkActive", "active"]], template: function AppHeaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 2);
